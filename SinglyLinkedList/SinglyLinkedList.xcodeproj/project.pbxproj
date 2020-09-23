@@ -14,6 +14,7 @@
 		A43139162519BB0B00416DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43139152519BB0B00416DD2 /* Assets.xcassets */; };
 		A43139192519BB0B00416DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43139172519BB0B00416DD2 /* LaunchScreen.storyboard */; };
 		A43139242519BB0B00416DD2 /* SinglyLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43139232519BB0B00416DD2 /* SinglyLinkedListTests.swift */; };
+		A43139312519C8C200416DD2 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43139302519C8C200416DD2 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A431391F2519BB0B00416DD2 /* SinglyLinkedListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinglyLinkedListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43139232519BB0B00416DD2 /* SinglyLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedListTests.swift; sourceTree = "<group>"; };
 		A43139252519BB0B00416DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A43139302519C8C200416DD2 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,8 @@
 		A431390B2519BB0A00416DD2 /* SinglyLinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				A431390C2519BB0A00416DD2 /* AppDelegate.swift */,
-				A431390E2519BB0A00416DD2 /* SceneDelegate.swift */,
-				A43139102519BB0A00416DD2 /* ViewController.swift */,
+				A431392F2519C89D00416DD2 /* Class */,
+				A431392E2519C88E00416DD2 /* Appdelegate */,
 				A43139122519BB0A00416DD2 /* Main.storyboard */,
 				A43139152519BB0B00416DD2 /* Assets.xcassets */,
 				A43139172519BB0B00416DD2 /* LaunchScreen.storyboard */,
@@ -97,6 +98,24 @@
 				A43139252519BB0B00416DD2 /* Info.plist */,
 			);
 			path = SinglyLinkedListTests;
+			sourceTree = "<group>";
+		};
+		A431392E2519C88E00416DD2 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A431390C2519BB0A00416DD2 /* AppDelegate.swift */,
+				A431390E2519BB0A00416DD2 /* SceneDelegate.swift */,
+				A43139102519BB0A00416DD2 /* ViewController.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		A431392F2519C89D00416DD2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A43139302519C8C200416DD2 /* LinkedList.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +221,7 @@
 			files = (
 				A43139112519BB0A00416DD2 /* ViewController.swift in Sources */,
 				A431390D2519BB0A00416DD2 /* AppDelegate.swift in Sources */,
+				A43139312519C8C200416DD2 /* LinkedList.swift in Sources */,
 				A431390F2519BB0A00416DD2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

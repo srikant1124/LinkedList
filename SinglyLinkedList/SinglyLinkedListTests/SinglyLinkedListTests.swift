@@ -10,25 +10,19 @@ import XCTest
 @testable import SinglyLinkedList
 
 class SinglyLinkedListTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+    let list = LinkedList<Int>()
+    
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        list.insertAtBeginning(value: 2)
+        list.insertAtBeginning(value: 3)
+        list.insertAtBeginning(value: 4)
+        
+        list.addAtEnd(value: 5)
+        list.addAtEnd(value: 6)
+        list.addAtEnd(value: 7)
+        
+        let items = list.printIt()
+        XCTAssertEqual(items, [4,3,2,5,6,7], "It should match")
+        XCTAssertEqual(items.count, list.count, "Count Should match")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
